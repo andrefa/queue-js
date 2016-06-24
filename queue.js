@@ -8,12 +8,14 @@
 
         queue.add = function(value) {
             this.vals.push(value);
+            return this;
         };
 
         queue.remove = function(value) {
             if (this.vals.length) {
                 var val = this.peek();
                 this.vals.splice(0,1);
+
                 return val;
             }
 

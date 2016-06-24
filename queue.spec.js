@@ -21,6 +21,20 @@ describe('Queue', function() {
         expect(queue.vals).toEqual([1]);
     });
 
+    it('add removes queue itself',function() {
+        var queue = new Queue();
+
+        expect(queue.add(1)).toEqual(queue);
+    });
+
+    it('chaining adds',function() {
+        var queue = new Queue();
+        queue.add(1).add(2).add(3);
+
+        expect(queue.vals).toEqual([1,2,3]);
+    });
+
+
     it('full scenario',function() {
         var queue = new Queue();
 

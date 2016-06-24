@@ -1,17 +1,17 @@
 # Queue
 
-Please write a class that represents a queue. The class must contain add, remove and peek methods.
+Javascript class that represents a queue.
 
 # Methods
 
-+add
-    adds an element to the queue, returns the queue itself
+add(val)
+adds an element to the queue, returns the queue itself
 
-+remove
-    removes an element from the queue and returns said element
+remove()
+removes an element from the queue and returns said element
 
-+peek
-    returns the next element to be removed, but does not change the queue
+peek()
+returns the next element to be removed, but does not change the queue
 
 # Tests
 
